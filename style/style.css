@@ -13,6 +13,10 @@ body {
   background:rgba(0, 0, 0,.01) !important;
 
 }
+.carousel-control-prev, .carousel-control-next {
+  background: linear-gradient(to right, white,rgba(0,0,0,.3),white) !important;
+}
+
 .navbar0 {
   background:rgba(0, 0, 0,.02) !important;
 
@@ -23,11 +27,22 @@ body {
 
 
 }
+
 .sign-none {
   display: none !important;
   width: 0;
   overflow: hidden;
 }
+  .carousel-indicators [data-bs-target] {
+    background: grey !important;
+    width: 25px !important;
+    height: 5px !important;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    height: 5px;
+    bottom: -30px !important;
+  }
 #nav-l {
   font-weight: 700 !important;
 }
@@ -582,6 +597,11 @@ outline: none !important;
   }
   .card {
     margin-top: 50px !important;
+    
+  }
+  .ww {
+    display: none !important;
+
   }
 }
 @media screen and (max-width: 900px){
